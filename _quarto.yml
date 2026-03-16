@@ -23,8 +23,8 @@ website:
       #- text: "Talks"
       #  href: talks/index.qmd
 
-      - text: "Blog"
-        href: blog.qmd
+      #- text: "Blog"
+      #  href: blog.qmd
 
       - section: "About"
         contents:
