@@ -1,0 +1,33 @@
+---
+title: "Zifan Huang"
+image: profile.jpg
+
+about:
+  id: hero-heading
+  template: trestles
+  image-shape: rectangle
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/zifan-huang/
+    - icon: github
+      text: GitHub
+      href: https://github.com/zifan33
+    - icon: envelope
+      text: Email
+      href: mailto:zifanh@bu.edu
+    - icon: download
+      text: CV
+      href: https://www.dropbox.com/scl/fi/vlcm145p38detq230amk2/CV_ZifanHuang.pdf?rlkey=cvlfts1d5x2sdr2b89fu2erhf&st=4tx72ukp&dl=0
+      target: _blank
+---
+::: {#hero-heading}
+
+I am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is `zifan.huang@chicagobooth.edu`.
+
+
+
+
+
+:::
+

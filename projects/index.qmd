@@ -1,0 +1,36 @@
+---
+title: "Projects"
+description: |
+  This page provides a mix of two types of listing, grouped by id.
+listing:
+  - id: ehr
+    type: grid
+    image-height: 150px
+    max-description-length: 500
+    fields: [image, title, description]
+    contents:
+      - path:        "https://zifan33.github.io/ma4615-sp25-final-project-teamate/about.html"
+        image:       "labor-market-information.png"
+        title:       "Replication: Systemic Discrimination Among Large U.S. Employers"
+        description: "Complemented the original study by adding employer and month fixed effects to the regression model; Visualized results with ggplot2 and built a Shiny app for interactive exploration to non-technical audiences; Utilized U.S. Census population data to analyze the geographical distribution of experimental designs."
+---
+  - id: packages
+    max-description-length: 80
+    image-height: 250px
+    fields: [title, description]
+    contents: 
+      - pkg_1
+      - pkg_2
+    type: table
+    grid-item-border: false
+    sort-ui: false
+    filter-ui: false
+    
+---
+
+
+
+
+
+
+
