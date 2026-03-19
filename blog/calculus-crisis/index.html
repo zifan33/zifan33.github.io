@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Zifan Huang">
+<meta name="dcterms.date" content="2026-03-18">
+
+<title>The Foundational Crisis of Calculus – Zifan Huang</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Zifan Huang
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">The Foundational Crisis of Calculus</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">mathematics</div>
+                <div class="quarto-category">history</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Zifan Huang </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 18, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Zifan Huang</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../blog.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a></li>
+  <li><a href="#the-mechanism-what-calculus-actually-did" id="toc-the-mechanism-what-calculus-actually-did" class="nav-link" data-scroll-target="#the-mechanism-what-calculus-actually-did"><span class="header-section-number">2</span> The Mechanism: What Calculus Actually Did</a>
+  <ul class="collapse">
+  <li><a href="#newtons-fluxions" id="toc-newtons-fluxions" class="nav-link" data-scroll-target="#newtons-fluxions"><span class="header-section-number">2.1</span> Newton’s Fluxions</a></li>
+  <li><a href="#leibnizs-differentials" id="toc-leibnizs-differentials" class="nav-link" data-scroll-target="#leibnizs-differentials"><span class="header-section-number">2.2</span> Leibniz’s Differentials</a></li>
+  <li><a href="#the-pattern" id="toc-the-pattern" class="nav-link" data-scroll-target="#the-pattern"><span class="header-section-number">2.3</span> The Pattern</a></li>
+  </ul></li>
+  <li><a href="#the-attack-bishop-berkeleys-the-analyst" id="toc-the-attack-bishop-berkeleys-the-analyst" class="nav-link" data-scroll-target="#the-attack-bishop-berkeleys-the-analyst"><span class="header-section-number">3</span> The Attack: Bishop Berkeley’s <em>The Analyst</em></a>
+  <ul class="collapse">
+  <li><a href="#the-man-and-the-motive" id="toc-the-man-and-the-motive" class="nav-link" data-scroll-target="#the-man-and-the-motive"><span class="header-section-number">3.1</span> The Man and the Motive</a></li>
+  <li><a href="#the-central-critique" id="toc-the-central-critique" class="nav-link" data-scroll-target="#the-central-critique"><span class="header-section-number">3.2</span> The Central Critique</a></li>
+  <li><a href="#a-concrete-example-of-the-double-error" id="toc-a-concrete-example-of-the-double-error" class="nav-link" data-scroll-target="#a-concrete-example-of-the-double-error"><span class="header-section-number">3.3</span> A Concrete Example of the Double Error</a></li>
+  </ul></li>
+  <li><a href="#the-defense-why-mathematicians-pressed-on" id="toc-the-defense-why-mathematicians-pressed-on" class="nav-link" data-scroll-target="#the-defense-why-mathematicians-pressed-on"><span class="header-section-number">4</span> The Defense: Why Mathematicians Pressed On</a>
+  <ul class="collapse">
+  <li><a href="#the-pragmatic-argument" id="toc-the-pragmatic-argument" class="nav-link" data-scroll-target="#the-pragmatic-argument"><span class="header-section-number">4.1</span> The Pragmatic Argument</a></li>
+  <li><a href="#attempts-at-rigorous-defense" id="toc-attempts-at-rigorous-defense" class="nav-link" data-scroll-target="#attempts-at-rigorous-defense"><span class="header-section-number">4.2</span> Attempts at Rigorous Defense</a></li>
+  </ul></li>
+  <li><a href="#the-resolution-limits-and-the-varepsilon-delta-definition" id="toc-the-resolution-limits-and-the-varepsilon-delta-definition" class="nav-link" data-scroll-target="#the-resolution-limits-and-the-varepsilon-delta-definition"><span class="header-section-number">5</span> The Resolution: Limits and the <span class="math inline">\(\varepsilon\)</span>-<span class="math inline">\(\delta\)</span> Definition</a>
+  <ul class="collapse">
+  <li><a href="#cauchys-reconstruction" id="toc-cauchys-reconstruction" class="nav-link" data-scroll-target="#cauchys-reconstruction"><span class="header-section-number">5.1</span> Cauchy’s Reconstruction</a></li>
+  <li><a href="#weierstrasss-formalization" id="toc-weierstrasss-formalization" class="nav-link" data-scroll-target="#weierstrasss-formalization"><span class="header-section-number">5.2</span> Weierstrass’s Formalization</a></li>
+  <li><a href="#what-changed" id="toc-what-changed" class="nav-link" data-scroll-target="#what-changed"><span class="header-section-number">5.3</span> What Changed</a></li>
+  </ul></li>
+  <li><a href="#epilogue-the-rehabilitation-of-infinitesimals" id="toc-epilogue-the-rehabilitation-of-infinitesimals" class="nav-link" data-scroll-target="#epilogue-the-rehabilitation-of-infinitesimals"><span class="header-section-number">6</span> Epilogue: The Rehabilitation of Infinitesimals</a>
+  <ul class="collapse">
+  <li><a href="#non-standard-analysis" id="toc-non-standard-analysis" class="nav-link" data-scroll-target="#non-standard-analysis"><span class="header-section-number">6.1</span> Non-Standard Analysis</a></li>
+  </ul></li>
+  <li><a href="#the-broader-lesson" id="toc-the-broader-lesson" class="nav-link" data-scroll-target="#the-broader-lesson"><span class="header-section-number">7</span> The Broader Lesson</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<p><em>How did mathematics produce correct answers from logically incoherent foundations</em></p>
+<section id="overview" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Overview</h1>
+<p>In the late 17th century, Newton and Leibniz independently invented calculus and handed humanity one of the most powerful intellectual tools ever devised. Within decades, it was being applied to planetary orbits, fluid mechanics, and the shapes of hanging chains — all with stunning success.</p>
+<p>There was, however, a problem. Nobody could say with any rigor what the fundamental objects of calculus <em>were</em>. The method worked, but the justification was, at its core, a sleight of hand: quantities were treated as nonzero when it was convenient, then discarded as zero when that became convenient. The contradiction was obvious and embarrassing. For roughly 150 years, calculus rested on foundations that its own practitioners could not defend.</p>
+<p>This is the story of that crisis, the famous attack on it, and the hard-won resolution.</p>
+</section>
+<section id="the-mechanism-what-calculus-actually-did" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> The Mechanism: What Calculus Actually Did</h1>
+<section id="newtons-fluxions" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="newtons-fluxions"><span class="header-section-number">2.1</span> Newton’s Fluxions</h2>
+<p>Newton framed calculus in terms of motion. A variable quantity — a “fluent” — flows continuously through time. Its <strong>fluxion</strong> is its instantaneous rate of flow, the velocity of the quantity. To find the fluxion of <span class="math inline">\(x^2\)</span>, Newton would let <span class="math inline">\(x\)</span> increase by a small amount <span class="math inline">\(o\)</span> over a small interval of time, compute the change in <span class="math inline">\(x^2\)</span>, and then divide by <span class="math inline">\(o\)</span>:</p>
+<p><span class="math display">\[
+\frac{(x + o)^2 - x^2}{o} = \frac{2xo + o^2}{o} = 2x + o
+\]</span></p>
+<p>Then Newton would <em>set <span class="math inline">\(o = 0\)</span></em> to obtain the fluxion <span class="math inline">\(2x\)</span>.</p>
+<p>The result is correct. But the reasoning is not: <span class="math inline">\(o\)</span> was assumed nonzero to justify the division, then assumed zero to discard the <span class="math inline">\(o^2/o = o\)</span> term. Both assumptions cannot hold simultaneously.</p>
+</section>
+<section id="leibnizs-differentials" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="leibnizs-differentials"><span class="header-section-number">2.2</span> Leibniz’s Differentials</h2>
+<p>Leibniz developed an equivalent but notationally different approach. He worked with <strong>differentials</strong> <span class="math inline">\(dx\)</span> and <span class="math inline">\(dy\)</span> — infinitely small increments in <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. The derivative is the ratio <span class="math inline">\(dy/dx\)</span>. For <span class="math inline">\(y = x^2\)</span>:</p>
+<p><span class="math display">\[
+dy = (x + dx)^2 - x^2 = 2x\,dx + (dx)^2
+\]</span></p>
+<p>Dividing by <span class="math inline">\(dx\)</span>:</p>
+<p><span class="math display">\[
+\frac{dy}{dx} = 2x + dx
+\]</span></p>
+<p>Then <span class="math inline">\((dx)^2\)</span> and the remaining <span class="math inline">\(dx\)</span> were dropped as “infinitely small compared to the finite <span class="math inline">\(2x\)</span>,” leaving <span class="math inline">\(dy/dx = 2x\)</span>.</p>
+<p>Again: correct answer, incoherent argument. If <span class="math inline">\(dx \neq 0\)</span>, the answer is <span class="math inline">\(2x + dx\)</span>, not <span class="math inline">\(2x\)</span>. If <span class="math inline">\(dx = 0\)</span>, the original division by <span class="math inline">\(dx\)</span> is illegal.</p>
+</section>
+<section id="the-pattern" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="the-pattern"><span class="header-section-number">2.3</span> The Pattern</h2>
+<p>Both methods share the same logical structure:</p>
+<ol type="1">
+<li>Introduce a small quantity (<span class="math inline">\(o\)</span> or <span class="math inline">\(dx\)</span>) and assume it is <strong>nonzero</strong> — so division by it is valid.</li>
+<li>Expand and simplify.</li>
+<li><strong>Discard</strong> all remaining powers of the small quantity as negligible.</li>
+<li>Obtain the correct answer.</li>
+</ol>
+<p>Step 3 is the scandal. The practitioner must decide, by feel, which terms to keep and which to throw away. There is no principled rule — just the implicit understanding that “higher-order infinitesimals are smaller than first-order ones.” What does <em>smaller</em> mean for a quantity that is already infinitely small? Nobody said.</p>
+</section>
+</section>
+<section id="the-attack-bishop-berkeleys-the-analyst" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> The Attack: Bishop Berkeley’s <em>The Analyst</em></h1>
+<section id="the-man-and-the-motive" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="the-man-and-the-motive"><span class="header-section-number">3.1</span> The Man and the Motive</h2>
+<p>George Berkeley (1685–1753), Bishop of Cloyne, was one of the great empiricist philosophers. He had a long-standing grievance with the scientific establishment: mathematicians and natural philosophers had been using their air of precision to attack religious faith, arguing that rigorous rational inquiry had no room for miracles or revelation. Berkeley decided to return the favor.</p>
+<p>In 1734 he published <strong><em>The Analyst: A Discourse Addressed to an Infidel Mathematician</em></strong>. His target was almost certainly Edmond Halley (of Halley’s comet fame). His argument was devastating.</p>
+</section>
+<section id="the-central-critique" class="level2 page-columns page-full" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="the-central-critique"><span class="header-section-number">3.2</span> The Central Critique</h2>
+<p>Berkeley accepted that the <em>results</em> of calculus were often correct. His attack was on the <em>reasoning</em>. He argued that the logical status of fluxions and infinitesimals was no better — and arguably worse — than the “mysteries” of religion that mathematicians mocked.</p>
+<p>His most famous line:</p>
+<blockquote class="blockquote">
+<p><em>“And what are these Fluxions? The Velocities of evanescent Increments. And what are these same evanescent Increments? They are neither finite Quantities nor Quantities infinitely small, nor yet nothing. May we not call them the Ghosts of departed Quantities?”</em></p>
+</blockquote>
+<p>The phrase <em>ghosts of departed quantities</em> is one of the most incisive epigrams in the history of science. It captures the problem exactly: the increments are invoked as real quantities when needed for the algebra, then made to vanish when they become inconvenient. They are neither alive (nonzero) nor dead (zero) — they haunt the calculation.</p>
+<p>Berkeley further argued that the correct results were obtained not <em>because of</em> the reasoning, but <em>despite</em> it — specifically, because two errors happened to cancel each other out:</p>
+<blockquote class="blockquote">
+<p><em>“By virtue of a twofold mistake you arrive, though not at science, yet at the truth.”</em></p>
+</blockquote>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Berkeley’s deeper philosophical point was that mathematicians demanded clarity in others’ domains (theology) that they conspicuously lacked in their own. The rhetorical force of <em>The Analyst</em> came precisely from this hypocrisy.</p>
+</div></div></section>
+<section id="a-concrete-example-of-the-double-error" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="a-concrete-example-of-the-double-error"><span class="header-section-number">3.3</span> A Concrete Example of the Double Error</h2>
+<p>Take the derivative of <span class="math inline">\(y = x^2\)</span> using the increment method. Berkeley’s “twofold error” argument:</p>
+<ul>
+<li><strong>Error 1:</strong> Treat <span class="math inline">\(o\)</span> as nonzero when dividing: <span class="math inline">\(\frac{(x+o)^2 - x^2}{o} = 2x + o\)</span></li>
+<li><strong>Error 2:</strong> Drop the <span class="math inline">\(o\)</span> term at the end, as if <span class="math inline">\(o = 0\)</span></li>
+</ul>
+<p>Each step is individually wrong, but the two errors cancel: the first “error” introduces a surplus <span class="math inline">\(o\)</span>, and the second “error” removes exactly that surplus, leaving the correct <span class="math inline">\(2x\)</span>. Berkeley’s point was that this looks like correct reasoning only because of a lucky coincidence in the algebra — and that no general principle justified why it <em>always</em> worked.</p>
+</section>
+</section>
+<section id="the-defense-why-mathematicians-pressed-on" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> The Defense: Why Mathematicians Pressed On</h1>
+<section id="the-pragmatic-argument" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-pragmatic-argument"><span class="header-section-number">4.1</span> The Pragmatic Argument</h2>
+<p>Faced with Berkeley’s critique, most mathematicians responded with something like: <em>the method works; figure out the foundations later.</em> This was not entirely unreasonable. Calculus was producing correct and verifiable predictions about the physical world at a rate that had never been seen before. Abandoning it because of a philosophical objection would have been scientifically catastrophic.</p>
+<p>There is a recurring pattern in mathematics where powerful techniques are used for decades or centuries before they are properly understood. (Complex numbers followed a similar arc: routinely used by the 16th century, not rigorously understood until the 19th.)</p>
+</section>
+<section id="attempts-at-rigorous-defense" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="attempts-at-rigorous-defense"><span class="header-section-number">4.2</span> Attempts at Rigorous Defense</h2>
+<p>Several mathematicians attempted to answer Berkeley on his own terms:</p>
+<ul>
+<li><p><strong>Colin Maclaurin</strong> (<em>Treatise of Fluxions</em>, 1742) tried to recast Newton’s calculus in the language of classical Greek geometry, avoiding infinitesimals entirely. The result was technically defensible but impossibly cumbersome and did not spread.</p></li>
+<li><p><strong>Jean le Rond d’Alembert</strong> argued that the derivative should be understood as a <strong>limit</strong> — the value approached by the difference quotient as the increment tends to zero. This was the germ of the right idea, but d’Alembert had no rigorous definition of “limit” and no way to make the argument precise.</p></li>
+<li><p><strong>Leonhard Euler</strong> simply treated infinitesimals as <em>exactly zero</em> when convenient. His results were almost always correct (Euler had preternatural instincts), but his justification satisfied no one who was paying attention.</p></li>
+</ul>
+<p>None of these responses answered Berkeley rigorously. The foundations remained contested.</p>
+</section>
+</section>
+<section id="the-resolution-limits-and-the-varepsilon-delta-definition" class="level1 page-columns page-full" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> The Resolution: Limits and the <span class="math inline">\(\varepsilon\)</span>-<span class="math inline">\(\delta\)</span> Definition</h1>
+<section id="cauchys-reconstruction" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="cauchys-reconstruction"><span class="header-section-number">5.1</span> Cauchy’s Reconstruction</h2>
+<p>The decisive step was taken by <strong>Augustin-Louis Cauchy</strong> in his <em>Cours d’analyse</em> (1821). Cauchy systematically rebuilt calculus on the concept of a <strong>limit</strong>, defined informally as follows:</p>
+<blockquote class="blockquote">
+<p>A variable quantity <span class="math inline">\(u_n\)</span> has limit <span class="math inline">\(\ell\)</span> if, for any desired precision, the values of <span class="math inline">\(u_n\)</span> eventually stay within that precision of <span class="math inline">\(\ell\)</span>.</p>
+</blockquote>
+<p>He defined the derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(x\)</span> as:</p>
+<p><span class="math display">\[
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+\]</span></p>
+<p>The key move: <span class="math inline">\(h\)</span> never <em>equals</em> zero in this definition. The limit describes the behavior of the difference quotient <em>as <span class="math inline">\(h\)</span> approaches zero</em>, not <em>at</em> <span class="math inline">\(h = 0\)</span>. No quantity is ever simultaneously nonzero and zero. The ghost is exorcised.</p>
+<p>Cauchy also gave the first rigorous definitions of continuity and of the definite integral (as the limit of Riemann sums), constructing the whole edifice from the limit concept upward.</p>
+</section>
+<section id="weierstrasss-formalization" class="level2 page-columns page-full" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="weierstrasss-formalization"><span class="header-section-number">5.2</span> Weierstrass’s Formalization</h2>
+<p>Cauchy’s limits still relied on intuitive language (“approaches,” “eventually”). <strong>Karl Weierstrass</strong> (1815–1897) replaced this with purely logical, quantifier-based definitions — eliminating all appeal to motion or intuition.</p>
+<p>The <strong><span class="math inline">\(\varepsilon\)</span>-<span class="math inline">\(\delta\)</span> definition of a limit</strong>:</p>
+<p><span class="math display">\[
+\lim_{x \to a} f(x) = L
+\quad \iff \quad
+\forall\, \varepsilon &gt; 0,\; \exists\, \delta &gt; 0 \text{ such that } 0 &lt; |x - a| &lt; \delta \implies |f(x) - L| &lt; \varepsilon
+\]</span></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>The <span class="math inline">\(\varepsilon\)</span>-<span class="math inline">\(\delta\)</span> definition replaced vague words like “approaches” with hard inequalities. It turned the limit from a dynamic process into a static logical statement — one that can be verified or refuted without any reference to time, motion, or “infinitely small” quantities.</p>
+</div></div><p>This definition contains no infinitesimals, no motion, no intuition. Every term is a real number; every statement is a logical condition. With this, the derivative is:</p>
+<p><span class="math display">\[
+f'(a) = L \iff \forall\,\varepsilon &gt; 0,\; \exists\,\delta &gt; 0 \text{ such that } 0 &lt; |h| &lt; \delta \implies \left|\frac{f(a+h)-f(a)}{h} - L\right| &lt; \varepsilon
+\]</span></p>
+<p>For <span class="math inline">\(f(x) = x^2\)</span>, <span class="math inline">\(a = x\)</span>:</p>
+<p><span class="math display">\[
+\left|\frac{(x+h)^2 - x^2}{h} - 2x\right| = \left|2x + h - 2x\right| = |h|
+\]</span></p>
+<p>So for any <span class="math inline">\(\varepsilon &gt; 0\)</span>, choose <span class="math inline">\(\delta = \varepsilon\)</span>. Then <span class="math inline">\(0 &lt; |h| &lt; \delta\)</span> implies <span class="math inline">\(|h| &lt; \varepsilon\)</span>. The limit is <span class="math inline">\(2x\)</span>, rigorously. No ghosts anywhere.</p>
+</section>
+<section id="what-changed" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="what-changed"><span class="header-section-number">5.3</span> What Changed</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 34%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Era</th>
+<th>Foundation</th>
+<th>Status of <span class="math inline">\(dx\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Newton / Leibniz</td>
+<td>Fluxions / differentials</td>
+<td>Nonzero then zero — inconsistent</td>
+</tr>
+<tr class="even">
+<td>Cauchy (1821)</td>
+<td>Limits (intuitive)</td>
+<td>Eliminated; limit is about <em>approach</em>, not arrival</td>
+</tr>
+<tr class="odd">
+<td>Weierstrass (1860s)</td>
+<td><span class="math inline">\(\varepsilon\)</span>-<span class="math inline">\(\delta\)</span></td>
+<td>Eliminated; purely static logical condition</td>
+</tr>
+</tbody>
+</table>
+<p>The 150-year crisis was resolved by <em>changing the question</em>. Instead of asking “what is an infinitely small quantity?”, Weierstrass asked “when does a function’s value get arbitrarily close to a target?” The second question has a precise answer that requires no new ontology.</p>
+</section>
+</section>
+<section id="epilogue-the-rehabilitation-of-infinitesimals" class="level1 page-columns page-full" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Epilogue: The Rehabilitation of Infinitesimals</h1>
+<section id="non-standard-analysis" class="level2 page-columns page-full" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="non-standard-analysis"><span class="header-section-number">6.1</span> Non-Standard Analysis</h2>
+<p>The story has a surprising coda. In 1960, logician <strong>Abraham Robinson</strong> proved that it is possible to extend the real numbers to a larger ordered field — the <strong>hyperreals</strong> — that genuinely contains infinitely small (and infinitely large) elements, and that this extension is logically consistent (assuming standard set theory is consistent).</p>
+<p>In Robinson’s <strong>non-standard analysis</strong>, <span class="math inline">\(dx\)</span> is a genuine nonzero infinitesimal, and <span class="math inline">\(dy/dx = 2x\)</span> follows rigorously without epsilon-delta arguments. The intuitions of Newton and Leibniz were, in a deep sense, vindicated: infinitesimals <em>can</em> be made rigorous. Berkeley’s objection was not that infinitesimals were the wrong idea, but that they had not been defined properly.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Robinson’s hyperreals satisfy the <strong>transfer principle</strong>: any first-order statement true of the reals is also true of the hyperreals. This is what makes non-standard analysis consistent — it is not a different mathematics, but an extension of the same one.</p>
+</div></div><p>The <span class="math inline">\(\varepsilon\)</span>-<span class="math inline">\(\delta\)</span> approach and non-standard analysis give identical results. They are two different foundations for the same edifice. Today, <span class="math inline">\(\varepsilon\)</span>-<span class="math inline">\(\delta\)</span> dominates in university courses, largely for historical and pedagogical reasons — not because infinitesimals are wrong, but because Weierstrass got there first.</p>
+</section>
+</section>
+<section id="the-broader-lesson" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> The Broader Lesson</h1>
+<p>The calculus crisis illustrates a recurring feature of mathematical history: <strong>the engine of discovery and the engine of justification run at different speeds.</strong> Practitioners developed extraordinarily powerful methods — differentiation, integration, differential equations — decades or centuries before anyone could explain <em>why</em> those methods worked.</p>
+<p>This is not a flaw unique to early modern mathematics. The same pattern appeared with:</p>
+<ul>
+<li><strong>Negative numbers</strong> (used routinely in accounting centuries before they were accepted as genuine numbers)</li>
+<li><strong>Complex numbers</strong> (used to solve cubic equations by Cardano in 1545; properly understood via the Argand plane only in the 1800s)</li>
+<li><strong>The Dirac delta “function”</strong> (used ubiquitously in physics from the 1920s; given rigorous foundations via distribution theory by Schwartz in 1950)</li>
+</ul>
+<p>Berkeley’s critique was entirely correct on its own terms. The mathematicians who ignored it and kept computing were also correct to do so. The resolution — Cauchy and Weierstrass — showed that the right response to a foundational crisis is not to stop calculating, but to find the deeper concept that the calculation was already implicitly relying on.</p>
+<p>In the case of calculus, that concept was the limit. It had been lurking in d’Alembert’s vague gestures and in Newton’s own phrase <em>“ultimate ratio”</em> — the ratio to which the difference quotient <em>ultimately</em> tends. It took another century to say what <em>ultimately</em> means.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/zifan33\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2026, Zifan Huang</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

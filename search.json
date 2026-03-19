@@ -4,25 +4,108 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Read more about Quarto blogs here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\n\n\n\n\n\nOct 25, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\n\n\n\n\nOct 22, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "The Foundational Crisis of Calculus\n\n\n\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nZifan Huang\n\n\n\n\n\n\n\n\n\n\n\n\nThe Solow Growth Model\n\n\n\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nZifan Huang\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Blog"
+    ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Zifan Huang",
     "section": "",
-    "text": "LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nI am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is zifan.huang@chicagobooth.edu.",
-    "crumbs": [
-      "About",
-      "Me"
-    ]
+    "text": "LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nI am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is zifan.huang@chicagobooth.edu."
   },
   {
-    "objectID": "blog/post-with-code/index.html",
-    "href": "blog/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "blog/calculus-crisis/index.html",
+    "href": "blog/calculus-crisis/index.html",
+    "title": "The Foundational Crisis of Calculus",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "How did mathematics produce correct answers from logically incoherent foundations"
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#newtons-fluxions",
+    "href": "blog/calculus-crisis/index.html#newtons-fluxions",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "2.1 Newton’s Fluxions",
+    "text": "2.1 Newton’s Fluxions\nNewton framed calculus in terms of motion. A variable quantity — a “fluent” — flows continuously through time. Its fluxion is its instantaneous rate of flow, the velocity of the quantity. To find the fluxion of \\(x^2\\), Newton would let \\(x\\) increase by a small amount \\(o\\) over a small interval of time, compute the change in \\(x^2\\), and then divide by \\(o\\):\n\\[\n\\frac{(x + o)^2 - x^2}{o} = \\frac{2xo + o^2}{o} = 2x + o\n\\]\nThen Newton would set \\(o = 0\\) to obtain the fluxion \\(2x\\).\nThe result is correct. But the reasoning is not: \\(o\\) was assumed nonzero to justify the division, then assumed zero to discard the \\(o^2/o = o\\) term. Both assumptions cannot hold simultaneously."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#leibnizs-differentials",
+    "href": "blog/calculus-crisis/index.html#leibnizs-differentials",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "2.2 Leibniz’s Differentials",
+    "text": "2.2 Leibniz’s Differentials\nLeibniz developed an equivalent but notationally different approach. He worked with differentials \\(dx\\) and \\(dy\\) — infinitely small increments in \\(x\\) and \\(y\\). The derivative is the ratio \\(dy/dx\\). For \\(y = x^2\\):\n\\[\ndy = (x + dx)^2 - x^2 = 2x\\,dx + (dx)^2\n\\]\nDividing by \\(dx\\):\n\\[\n\\frac{dy}{dx} = 2x + dx\n\\]\nThen \\((dx)^2\\) and the remaining \\(dx\\) were dropped as “infinitely small compared to the finite \\(2x\\),” leaving \\(dy/dx = 2x\\).\nAgain: correct answer, incoherent argument. If \\(dx \\neq 0\\), the answer is \\(2x + dx\\), not \\(2x\\). If \\(dx = 0\\), the original division by \\(dx\\) is illegal."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-pattern",
+    "href": "blog/calculus-crisis/index.html#the-pattern",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "2.3 The Pattern",
+    "text": "2.3 The Pattern\nBoth methods share the same logical structure:\n\nIntroduce a small quantity (\\(o\\) or \\(dx\\)) and assume it is nonzero — so division by it is valid.\nExpand and simplify.\nDiscard all remaining powers of the small quantity as negligible.\nObtain the correct answer.\n\nStep 3 is the scandal. The practitioner must decide, by feel, which terms to keep and which to throw away. There is no principled rule — just the implicit understanding that “higher-order infinitesimals are smaller than first-order ones.” What does smaller mean for a quantity that is already infinitely small? Nobody said."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-man-and-the-motive",
+    "href": "blog/calculus-crisis/index.html#the-man-and-the-motive",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "3.1 The Man and the Motive",
+    "text": "3.1 The Man and the Motive\nGeorge Berkeley (1685–1753), Bishop of Cloyne, was one of the great empiricist philosophers. He had a long-standing grievance with the scientific establishment: mathematicians and natural philosophers had been using their air of precision to attack religious faith, arguing that rigorous rational inquiry had no room for miracles or revelation. Berkeley decided to return the favor.\nIn 1734 he published The Analyst: A Discourse Addressed to an Infidel Mathematician. His target was almost certainly Edmond Halley (of Halley’s comet fame). His argument was devastating."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-central-critique",
+    "href": "blog/calculus-crisis/index.html#the-central-critique",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "3.2 The Central Critique",
+    "text": "3.2 The Central Critique\nBerkeley accepted that the results of calculus were often correct. His attack was on the reasoning. He argued that the logical status of fluxions and infinitesimals was no better — and arguably worse — than the “mysteries” of religion that mathematicians mocked.\nHis most famous line:\n\n“And what are these Fluxions? The Velocities of evanescent Increments. And what are these same evanescent Increments? They are neither finite Quantities nor Quantities infinitely small, nor yet nothing. May we not call them the Ghosts of departed Quantities?”\n\nThe phrase ghosts of departed quantities is one of the most incisive epigrams in the history of science. It captures the problem exactly: the increments are invoked as real quantities when needed for the algebra, then made to vanish when they become inconvenient. They are neither alive (nonzero) nor dead (zero) — they haunt the calculation.\nBerkeley further argued that the correct results were obtained not because of the reasoning, but despite it — specifically, because two errors happened to cancel each other out:\n\n“By virtue of a twofold mistake you arrive, though not at science, yet at the truth.”\n\n\n\nBerkeley’s deeper philosophical point was that mathematicians demanded clarity in others’ domains (theology) that they conspicuously lacked in their own. The rhetorical force of The Analyst came precisely from this hypocrisy."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#a-concrete-example-of-the-double-error",
+    "href": "blog/calculus-crisis/index.html#a-concrete-example-of-the-double-error",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "3.3 A Concrete Example of the Double Error",
+    "text": "3.3 A Concrete Example of the Double Error\nTake the derivative of \\(y = x^2\\) using the increment method. Berkeley’s “twofold error” argument:\n\nError 1: Treat \\(o\\) as nonzero when dividing: \\(\\frac{(x+o)^2 - x^2}{o} = 2x + o\\)\nError 2: Drop the \\(o\\) term at the end, as if \\(o = 0\\)\n\nEach step is individually wrong, but the two errors cancel: the first “error” introduces a surplus \\(o\\), and the second “error” removes exactly that surplus, leaving the correct \\(2x\\). Berkeley’s point was that this looks like correct reasoning only because of a lucky coincidence in the algebra — and that no general principle justified why it always worked."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-pragmatic-argument",
+    "href": "blog/calculus-crisis/index.html#the-pragmatic-argument",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "4.1 The Pragmatic Argument",
+    "text": "4.1 The Pragmatic Argument\nFaced with Berkeley’s critique, most mathematicians responded with something like: the method works; figure out the foundations later. This was not entirely unreasonable. Calculus was producing correct and verifiable predictions about the physical world at a rate that had never been seen before. Abandoning it because of a philosophical objection would have been scientifically catastrophic.\nThere is a recurring pattern in mathematics where powerful techniques are used for decades or centuries before they are properly understood. (Complex numbers followed a similar arc: routinely used by the 16th century, not rigorously understood until the 19th.)"
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#attempts-at-rigorous-defense",
+    "href": "blog/calculus-crisis/index.html#attempts-at-rigorous-defense",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "4.2 Attempts at Rigorous Defense",
+    "text": "4.2 Attempts at Rigorous Defense\nSeveral mathematicians attempted to answer Berkeley on his own terms:\n\nColin Maclaurin (Treatise of Fluxions, 1742) tried to recast Newton’s calculus in the language of classical Greek geometry, avoiding infinitesimals entirely. The result was technically defensible but impossibly cumbersome and did not spread.\nJean le Rond d’Alembert argued that the derivative should be understood as a limit — the value approached by the difference quotient as the increment tends to zero. This was the germ of the right idea, but d’Alembert had no rigorous definition of “limit” and no way to make the argument precise.\nLeonhard Euler simply treated infinitesimals as exactly zero when convenient. His results were almost always correct (Euler had preternatural instincts), but his justification satisfied no one who was paying attention.\n\nNone of these responses answered Berkeley rigorously. The foundations remained contested."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#cauchys-reconstruction",
+    "href": "blog/calculus-crisis/index.html#cauchys-reconstruction",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "5.1 Cauchy’s Reconstruction",
+    "text": "5.1 Cauchy’s Reconstruction\nThe decisive step was taken by Augustin-Louis Cauchy in his Cours d’analyse (1821). Cauchy systematically rebuilt calculus on the concept of a limit, defined informally as follows:\n\nA variable quantity \\(u_n\\) has limit \\(\\ell\\) if, for any desired precision, the values of \\(u_n\\) eventually stay within that precision of \\(\\ell\\).\n\nHe defined the derivative of \\(f\\) at \\(x\\) as:\n\\[\nf'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}\n\\]\nThe key move: \\(h\\) never equals zero in this definition. The limit describes the behavior of the difference quotient as \\(h\\) approaches zero, not at \\(h = 0\\). No quantity is ever simultaneously nonzero and zero. The ghost is exorcised.\nCauchy also gave the first rigorous definitions of continuity and of the definite integral (as the limit of Riemann sums), constructing the whole edifice from the limit concept upward."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#weierstrasss-formalization",
+    "href": "blog/calculus-crisis/index.html#weierstrasss-formalization",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "5.2 Weierstrass’s Formalization",
+    "text": "5.2 Weierstrass’s Formalization\nCauchy’s limits still relied on intuitive language (“approaches,” “eventually”). Karl Weierstrass (1815–1897) replaced this with purely logical, quantifier-based definitions — eliminating all appeal to motion or intuition.\nThe \\(\\varepsilon\\)-\\(\\delta\\) definition of a limit:\n\\[\n\\lim_{x \\to a} f(x) = L\n\\quad \\iff \\quad\n\\forall\\, \\varepsilon &gt; 0,\\; \\exists\\, \\delta &gt; 0 \\text{ such that } 0 &lt; |x - a| &lt; \\delta \\implies |f(x) - L| &lt; \\varepsilon\n\\]\n\n\nThe \\(\\varepsilon\\)-\\(\\delta\\) definition replaced vague words like “approaches” with hard inequalities. It turned the limit from a dynamic process into a static logical statement — one that can be verified or refuted without any reference to time, motion, or “infinitely small” quantities.\nThis definition contains no infinitesimals, no motion, no intuition. Every term is a real number; every statement is a logical condition. With this, the derivative is:\n\\[\nf'(a) = L \\iff \\forall\\,\\varepsilon &gt; 0,\\; \\exists\\,\\delta &gt; 0 \\text{ such that } 0 &lt; |h| &lt; \\delta \\implies \\left|\\frac{f(a+h)-f(a)}{h} - L\\right| &lt; \\varepsilon\n\\]\nFor \\(f(x) = x^2\\), \\(a = x\\):\n\\[\n\\left|\\frac{(x+h)^2 - x^2}{h} - 2x\\right| = \\left|2x + h - 2x\\right| = |h|\n\\]\nSo for any \\(\\varepsilon &gt; 0\\), choose \\(\\delta = \\varepsilon\\). Then \\(0 &lt; |h| &lt; \\delta\\) implies \\(|h| &lt; \\varepsilon\\). The limit is \\(2x\\), rigorously. No ghosts anywhere."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#what-changed",
+    "href": "blog/calculus-crisis/index.html#what-changed",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "5.3 What Changed",
+    "text": "5.3 What Changed\n\n\n\n\n\n\n\n\nEra\nFoundation\nStatus of \\(dx\\)\n\n\n\n\nNewton / Leibniz\nFluxions / differentials\nNonzero then zero — inconsistent\n\n\nCauchy (1821)\nLimits (intuitive)\nEliminated; limit is about approach, not arrival\n\n\nWeierstrass (1860s)\n\\(\\varepsilon\\)-\\(\\delta\\)\nEliminated; purely static logical condition\n\n\n\nThe 150-year crisis was resolved by changing the question. Instead of asking “what is an infinitely small quantity?”, Weierstrass asked “when does a function’s value get arbitrarily close to a target?” The second question has a precise answer that requires no new ontology."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#non-standard-analysis",
+    "href": "blog/calculus-crisis/index.html#non-standard-analysis",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "6.1 Non-Standard Analysis",
+    "text": "6.1 Non-Standard Analysis\nThe story has a surprising coda. In 1960, logician Abraham Robinson proved that it is possible to extend the real numbers to a larger ordered field — the hyperreals — that genuinely contains infinitely small (and infinitely large) elements, and that this extension is logically consistent (assuming standard set theory is consistent).\nIn Robinson’s non-standard analysis, \\(dx\\) is a genuine nonzero infinitesimal, and \\(dy/dx = 2x\\) follows rigorously without epsilon-delta arguments. The intuitions of Newton and Leibniz were, in a deep sense, vindicated: infinitesimals can be made rigorous. Berkeley’s objection was not that infinitesimals were the wrong idea, but that they had not been defined properly.\n\n\nRobinson’s hyperreals satisfy the transfer principle: any first-order statement true of the reals is also true of the hyperreals. This is what makes non-standard analysis consistent — it is not a different mathematics, but an extension of the same one.\nThe \\(\\varepsilon\\)-\\(\\delta\\) approach and non-standard analysis give identical results. They are two different foundations for the same edifice. Today, \\(\\varepsilon\\)-\\(\\delta\\) dominates in university courses, largely for historical and pedagogical reasons — not because infinitesimals are wrong, but because Weierstrass got there first."
   },
   {
     "objectID": "talks/talk_1/index.html",
@@ -88,11 +171,137 @@
     "text": "Electronic Health Records\n\n\n\n\n\n\n\n\n\n\nLearning from Hospital EHR data with R\n\n\n\n\n\nA 15 minutes introduction to hospital EHR data\n\n\n\n\n\nOct 28, 2019\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "blog/welcome/index.html",
-    "href": "blog/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Zifan Huang",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nI am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is zifan.huang@chicagobooth.edu."
+  },
+  {
+    "objectID": "blog/solow/index.html",
+    "href": "blog/solow/index.html",
+    "title": "The Solow Growth Model",
+    "section": "",
+    "text": "Based on David Romer, “Advanced Macroeconomics,” 3rd edition, Chapter 1."
+  },
+  {
+    "objectID": "blog/solow/index.html#the-three-inputs",
+    "href": "blog/solow/index.html#the-three-inputs",
+    "title": "The Solow Growth Model",
+    "section": "2.1 The Three Inputs",
+    "text": "2.1 The Three Inputs\nThe economy produces a single good \\(Y\\) using three inputs:\n\nCapital \\(K(t)\\): the stock of physical capital (machines, structures, equipment).\nLabor \\(L(t)\\): the number of workers.\nTechnology \\(A(t)\\): the level of productive knowledge.\n\nAll variables are continuous functions of time \\(t\\)."
+  },
+  {
+    "objectID": "blog/solow/index.html#exogenous-growth-of-labor-and-technology",
+    "href": "blog/solow/index.html#exogenous-growth-of-labor-and-technology",
+    "title": "The Solow Growth Model",
+    "section": "2.2 Exogenous Growth of Labor and Technology",
+    "text": "2.2 Exogenous Growth of Labor and Technology\nBoth \\(L\\) and \\(A\\) grow at constant, exogenous rates:\n\\[\n\\dot{L}(t) = n \\, L(t)\n\\tag{1}\\]\n\\[\n\\dot{A}(t) = g \\, A(t)\n\\tag{2}\\]\n\n\nNotation\n\\(\\dot{x} \\equiv dx/dt\\) is the time derivative of \\(x\\).\n\\(n\\) = population (labor) growth rate. Typical value: 1–2% per year.\n\\(g\\) = rate of labor-augmenting technological progress. Typical value: 1–2% per year.\nIntegrating Equation 1 and Equation 2:\n\\[\nL(t) = L(0)\\,e^{nt}, \\qquad A(t) = A(0)\\,e^{gt}\n\\]\nEconomic intuition: Population growth is treated as a pure demographic fact — exogenous to the model. Technological progress reflects cumulative human knowledge, also treated as exogenous here. This exogeneity is the model’s key limitation and the starting point for endogenous growth theory."
+  },
+  {
+    "objectID": "blog/solow/index.html#the-production-function",
+    "href": "blog/solow/index.html#the-production-function",
+    "title": "The Solow Growth Model",
+    "section": "2.3 The Production Function",
+    "text": "2.3 The Production Function\nOutput is:\n\\[\nY(t) = F\\!\\bigl(K(t),\\; A(t)\\,L(t)\\bigr)\n\\tag{3}\\]\n\n\nNotation\n\\(Y\\) = aggregate output (GDP).\n\\(K\\) = aggregate capital stock.\n\\(A(t)L(t)\\) = “effective labor.” One worker with technology \\(A\\) is as productive as \\(A\\) workers at baseline technology.\nThis specification of technology as labor-augmenting (also called Harrod-neutral) is necessary for a balanced growth path to exist.\n\n2.3.1 Assumption 1 — Constant Returns to Scale\nFor any scalar \\(c &gt; 0\\):\n\\[\nF(cK,\\; cAL) = c\\,F(K,\\;AL)\n\\tag{4}\\]\nDoubling all inputs exactly doubles output. The standard justification is replication: clone a factory together with all its workers, and output doubles.\n\n\n2.3.2 Assumption 2 — Positive, Diminishing Marginal Products\n\\[\nF_K &gt; 0,\\quad F_{AL} &gt; 0; \\qquad F_{KK} &lt; 0,\\quad F_{AL,AL} &lt; 0\n\\tag{5}\\]\nMore capital or more effective labor raises output, but at a declining rate. The first machine is very productive; the hundredth less so because it competes for the same workers.\n\n\n2.3.3 Assumption 3 — Inada Conditions\n\\[\n\\lim_{K \\to 0} F_K = \\infty,\\quad \\lim_{K \\to \\infty} F_K = 0\n\\tag{6}\\]\n\\[\n\\lim_{AL \\to 0} F_{AL} = \\infty,\\quad \\lim_{AL \\to \\infty} F_{AL} = 0\n\\tag{7}\\]\n\n\nInada conditions guarantee that the \\(sf(k)\\) curve starts above the break-even line near \\(k=0\\) and falls below it for large \\(k\\), ensuring a unique interior steady state. Named after Ken-Ichi Inada (1963).\nWhen capital is scarce, an additional unit is enormously valuable (infinite marginal product). When capital is abundant, extra units add almost nothing. These two boundary conditions, combined with continuity, pin down a unique positive steady state."
+  },
+  {
+    "objectID": "blog/solow/index.html#capital-accumulation",
+    "href": "blog/solow/index.html#capital-accumulation",
+    "title": "The Solow Growth Model",
+    "section": "2.4 Capital Accumulation",
+    "text": "2.4 Capital Accumulation\n\n\nNotation\n\\(s\\) = saving rate, \\(s \\in (0,1)\\). The fraction of output households save. Treated as exogenous and constant in the Solow model.\n\\(\\delta\\) = depreciation rate of capital. Typical value: 5–10% per year.\nA fixed fraction \\(s\\) of output is saved and invested:\n\\[\n\\dot{K}(t) = s\\,Y(t) - \\delta\\,K(t)\n\\tag{8}\\]\nThe capital stock rises by gross investment \\(sY\\) and falls by depreciation \\(\\delta K\\)."
+  },
+  {
+    "objectID": "blog/solow/index.html#transforming-variables",
+    "href": "blog/solow/index.html#transforming-variables",
+    "title": "The Solow Growth Model",
+    "section": "3.1 Transforming Variables",
+    "text": "3.1 Transforming Variables\nWorking in levels is cumbersome because \\(K\\), \\(L\\), and \\(A\\) all trend upward. Instead, divide by \\(A(t)L(t)\\) — the total number of effective workers — to obtain stationary variables:\n\\[\nk(t) \\;\\equiv\\; \\frac{K(t)}{A(t)\\,L(t)}, \\qquad y(t) \\;\\equiv\\; \\frac{Y(t)}{A(t)\\,L(t)}\n\\tag{9}\\]\n\n\nNotation\n\\(k\\) = capital per effective worker.\n\\(y\\) = output per effective worker.\nDividing by \\(AL\\) (not just \\(L\\)) removes both population growth and technological growth, leaving a variable that is constant in the long run."
+  },
+  {
+    "objectID": "blog/solow/index.html#intensive-form-production-function",
+    "href": "blog/solow/index.html#intensive-form-production-function",
+    "title": "The Solow Growth Model",
+    "section": "3.2 Intensive-Form Production Function",
+    "text": "3.2 Intensive-Form Production Function\nApply the CRS property (Equation 4) with \\(c = 1/(AL)\\):\n\\[\nF\\!\\left(\\frac{K}{AL},\\;1\\right) = \\frac{1}{AL}\\,F(K,\\,AL) = \\frac{Y}{AL} = y\n\\]\nSo we can write:\n\\[\ny = f(k), \\qquad \\text{where } f(k) \\equiv F(k,\\,1)\n\\tag{10}\\]\nThe intensive-form function \\(f\\) inherits the properties of \\(F\\): \\(f'&gt;0\\), \\(f''&lt;0\\), \\(f(0)=0\\), with Inada conditions \\(f'(0)=\\infty\\) and \\(f'(\\infty)=0\\).\n\nCobb-Douglas example. If \\(F(K,AL)=K^\\alpha(AL)^{1-\\alpha}\\) with \\(\\alpha\\in(0,1)\\), then \\[f(k)=k^\\alpha \\tag{11}\\] This is the most common functional form in applications."
+  },
+  {
+    "objectID": "blog/solow/index.html#deriving-the-equation-of-motion-for-k",
+    "href": "blog/solow/index.html#deriving-the-equation-of-motion-for-k",
+    "title": "The Solow Growth Model",
+    "section": "3.3 Deriving the Equation of Motion for \\(k\\)",
+    "text": "3.3 Deriving the Equation of Motion for \\(k\\)\nDifferentiate the definition \\(k = K/(AL)\\) with respect to time (quotient rule):\n\\[\n\\dot{k} = \\frac{\\dot{K}}{AL} - \\frac{K}{AL}\\cdot\\frac{d(AL)/dt}{AL}\n\\]\nThe growth rate of \\(AL\\) is:\n\\[\n\\frac{d(AL)/dt}{AL} = \\frac{\\dot{A}L + A\\dot{L}}{AL} = \\frac{\\dot{A}}{A} + \\frac{\\dot{L}}{L} = g + n\n\\]\nSo:\n\\[\n\\dot{k} = \\frac{\\dot{K}}{AL} - (n+g)\\,k\n\\tag{12}\\]\nSubstitute \\(\\dot{K} = sY - \\delta K\\) from Equation 8:\n\\[\n\\dot{k} = \\frac{sY - \\delta K}{AL} - (n+g)\\,k = s\\cdot\\frac{Y}{AL} - \\delta\\cdot\\frac{K}{AL} - (n+g)\\,k\n\\]\nUsing Equation 9 and Equation 10:\n\\[\n\\boxed{\\dot{k} = s\\,f(k) - (n + g + \\delta)\\,k}\n\\tag{13}\\]\n\n\nEquation 13 is the engine of the Solow model. It fully describes how the economy evolves over time. All the model’s predictions — the steady state, convergence, comparative statics — follow directly from this single equation.\nTerm-by-term intuition for Equation 13:\n\n\n\n\n\n\n\nTerm\nMeaning\n\n\n\n\n\\(s\\,f(k)\\)\nActual investment per effective worker: the fraction \\(s\\) of output that gets saved and added to capital\n\n\n\\(\\delta\\, k\\)\nCapital lost to depreciation\n\n\n\\(n\\,k\\)\nCapital diluted by new workers joining the labor force\n\n\n\\(g\\,k\\)\nCapital diluted because each worker becomes more productive (the same \\(K\\) now serves a larger effective workforce)\n\n\n\\((n+g+\\delta)k\\)\nTotal break-even investment: what must be invested just to keep \\(k\\) constant\n\n\n\n\\(k\\) rises when actual investment exceeds break-even, and falls otherwise."
+  },
+  {
+    "objectID": "blog/solow/index.html#existence-and-uniqueness",
+    "href": "blog/solow/index.html#existence-and-uniqueness",
+    "title": "The Solow Growth Model",
+    "section": "4.1 Existence and Uniqueness",
+    "text": "4.1 Existence and Uniqueness\nA steady state is a value \\(k^*&gt;0\\) at which \\(\\dot{k}=0\\). Setting Equation 13 to zero:\n\\[\ns\\,f(k^*) = (n+g+\\delta)\\,k^*\n\\tag{14}\\]\n\n\nThe steady state \\(k^*\\) depends on \\(s\\), \\(n\\), \\(g\\), and \\(\\delta\\). A country with a higher saving rate or lower population growth has a higher \\(k^*\\) and therefore a higher long-run standard of living.\nExistence and uniqueness via Inada conditions. Define \\(h(k) \\equiv sf(k)/[(n+g+\\delta)k] = sf(k)/k \\cdot 1/(n+g+\\delta)\\). By the Inada conditions:\n\\[\n\\lim_{k\\to 0} h(k) = \\frac{s \\cdot f'(0)}{n+g+\\delta} = \\infty, \\qquad \\lim_{k\\to\\infty} h(k) = \\frac{s\\cdot 0}{n+g+\\delta} = 0\n\\]\nBecause \\(h\\) is continuous and strictly decreasing (since \\(f''&lt;0\\)), there is exactly one \\(k^*&gt;0\\) where \\(h(k^*)=1\\), i.e., where the two curves cross."
+  },
+  {
+    "objectID": "blog/solow/index.html#stability",
+    "href": "blog/solow/index.html#stability",
+    "title": "The Solow Growth Model",
+    "section": "4.2 Stability",
+    "text": "4.2 Stability\nFor \\(k &lt; k^*\\): \\(sf(k) &gt; (n+g+\\delta)k\\) so \\(\\dot{k}&gt;0\\) (capital accumulates). For \\(k &gt; k^*\\): \\(sf(k) &lt; (n+g+\\delta)k\\) so \\(\\dot{k}&lt;0\\) (capital decumulates).\nTherefore \\(k^*\\) is globally stable: any economy starting at \\(k(0)&gt;0\\) converges to \\(k^*\\)."
+  },
+  {
+    "objectID": "blog/solow/index.html#long-run-growth-rates",
+    "href": "blog/solow/index.html#long-run-growth-rates",
+    "title": "The Solow Growth Model",
+    "section": "4.3 Long-Run Growth Rates",
+    "text": "4.3 Long-Run Growth Rates\nOnce the economy reaches \\(k^*\\), what grows and at what rate?\n\n\n\nVariable\nDefinition\nGrowth rate at \\(k^*\\)\n\n\n\n\n\\(k = K/(AL)\\)\nCapital per effective worker\n0\n\n\n\\(y = Y/(AL)\\)\nOutput per effective worker\n0\n\n\n\\(K/L\\)\nCapital per worker\n\\(g\\)\n\n\n\\(Y/L\\)\nOutput per worker (living standard)\n\\(g\\)\n\n\n\\(Y\\)\nTotal output\n\\(n+g\\)\n\n\n\n\n\nThe central prediction: In the long run, output per worker grows at rate \\(g\\) — the rate of technology — regardless of the saving rate \\(s\\). Saving affects the level of output per worker, not its long-run growth rate.\nKey insight. The saving rate \\(s\\) has no effect on the long-run growth rate of per-capita income. It only affects the level. This sharp prediction distinguishes the Solow model from models with linear production functions (AK models), where \\(s\\) permanently raises the growth rate."
+  },
+  {
+    "objectID": "blog/solow/index.html#speed-of-convergence",
+    "href": "blog/solow/index.html#speed-of-convergence",
+    "title": "The Solow Growth Model",
+    "section": "5.1 Speed of Convergence",
+    "text": "5.1 Speed of Convergence\nHow fast does the economy approach \\(k^*\\)? Define the deviation \\(\\tilde{k}(t) \\equiv k(t) - k^*\\). Linearizing \\(\\dot{k} = \\phi(k) \\equiv sf(k)-(n+g+\\delta)k\\) around \\(k^*\\):\n\\[\n\\dot{\\tilde{k}} \\approx \\phi'(k^*)\\,\\tilde{k}\n\\tag{15}\\]\nwhere\n\\[\n\\phi'(k^*) = sf'(k^*) - (n+g+\\delta)\n\\tag{16}\\]\nEquation 15 is just a first-order linear ODE with constant coefficient \\(\\phi'(k^*)\\). Separating variables and integrating:\n\\[\n\\frac{d\\tilde{k}}{\\tilde{k}} = \\phi'(k^*)\\,dt\n\\;\\implies\\;\n\\ln \\tilde{k}(t) = \\phi'(k^*)\\,t + C\n\\;\\implies\\;\n\\tilde{k}(t) = \\tilde{k}(0)\\,e^{\\phi'(k^*)\\,t}\n\\]\nAt a stable steady state, \\(\\phi'(k^*) &lt; 0\\) (the curve \\(\\dot{k}\\) slopes downward at \\(k^*\\)), so this solution decays to zero — the economy returns to \\(k^*\\). We define \\(\\lambda\\) simply to replace the negative coefficient with a positive one:\n\\[\n\\lambda \\;\\equiv\\; -\\phi'(k^*) &gt; 0\n\\]\nso the solution reads more naturally as exponential decay:\n\\[\n\\tilde{k}(t) \\approx \\tilde{k}(0)\\,e^{-\\lambda t}\n\\tag{17}\\]\n\n\n\\(\\lambda &gt; 0\\) is the convergence rate: the fraction of the remaining gap closed per unit time. A larger \\(\\lambda\\) means faster convergence.\nIt remains to compute \\(\\lambda\\) explicitly. Define \\(\\alpha_K^* \\equiv k^*f'(k^*)/f(k^*)\\) as the capital share at the steady state. The steady-state condition \\(sf(k^*) = (n+g+\\delta)k^*\\) implies:\n\\[\ns = \\frac{(n+g+\\delta)\\,k^*}{f(k^*)}\n\\tag{18}\\]\nSubstituting into \\(\\lambda = (n+g+\\delta) - sf'(k^*)\\):\n\\[\n\\lambda = (n+g+\\delta) - \\frac{(n+g+\\delta)\\,k^*}{f(k^*)}\\cdot f'(k^*)\n= (n+g+\\delta)\\!\\left(1 - \\frac{k^*f'(k^*)}{f(k^*)}\\right)\n= (n+g+\\delta)\\bigl(1 - \\alpha_K^*\\bigr)\n\\tag{19}\\]\nThe economy closes a fraction \\(1-e^{-\\lambda t}\\) of the gap each period.\nNumerical example. With \\(\\alpha_K^* = 1/3\\), \\(n=0.01\\), \\(g=0.02\\), \\(\\delta=0.05\\):\n\\[\n\\lambda = (0.01+0.02+0.05)\\bigl(1-\\tfrac{1}{3}\\bigr) = 0.08 \\times \\tfrac{2}{3} \\approx 5.3\\%\n\\]\nHalf-life \\(= \\ln 2 / \\lambda \\approx 13\\) years. If human capital is included and \\(\\alpha_K^* \\approx 2/3\\), then \\(\\lambda \\approx 2.7\\%\\) and the half-life is about 26 years, which matches cross-country empirical estimates better."
+  },
+  {
+    "objectID": "blog/solow/index.html#absolute-vs.-conditional-convergence",
+    "href": "blog/solow/index.html#absolute-vs.-conditional-convergence",
+    "title": "The Solow Growth Model",
+    "section": "5.2 Absolute vs. Conditional Convergence",
+    "text": "5.2 Absolute vs. Conditional Convergence\n\nAbsolute convergence: all countries converge to the same \\(k^*\\). Requires identical \\(s\\), \\(n\\), \\(g\\), \\(\\delta\\), and technology — unrealistic.\nConditional convergence: each country converges to its own \\(k^*\\) determined by its parameters. Countries below their own steady state grow faster. This is what cross-country data support: controlling for steady-state determinants, poorer countries grow faster."
+  },
+  {
+    "objectID": "blog/solow/index.html#a-rise-in-the-saving-rate-s",
+    "href": "blog/solow/index.html#a-rise-in-the-saving-rate-s",
+    "title": "The Solow Growth Model",
+    "section": "6.1 A Rise in the Saving Rate \\(s\\)",
+    "text": "6.1 A Rise in the Saving Rate \\(s\\)\nSuppose \\(s\\) rises permanently from \\(s_1\\) to \\(s_2 &gt; s_1\\).\nStep 1. The break-even line \\((n+g+\\delta)k\\) is unchanged. The actual investment curve shifts up. A new (higher) steady state \\(k_2^* &gt; k_1^*\\) emerges from Equation 14.\nStep 2. At the moment of the shock, \\(k = k_1^*\\) but \\(s_2 f(k_1^*) &gt; (n+g+\\delta)k_1^*\\), so \\(\\dot{k} &gt; 0\\) and capital accumulation resumes.\nStep 3. Output per effective worker rises from \\(y_1^* = f(k_1^*)\\) to \\(y_2^* = f(k_2^*) &gt; y_1^*\\).\nStep 4. The long-run growth rate of \\(Y/L\\) remains \\(g\\) — higher \\(s\\) only raises the level."
+  },
+  {
+    "objectID": "blog/solow/index.html#a-rise-in-population-growth-n",
+    "href": "blog/solow/index.html#a-rise-in-population-growth-n",
+    "title": "The Solow Growth Model",
+    "section": "6.2 A Rise in Population Growth \\(n\\)",
+    "text": "6.2 A Rise in Population Growth \\(n\\)\nA higher \\(n\\) steepens the break-even line. The actual investment curve \\(sf(k)\\) is unchanged, so the intersection moves to the left: \\(k^{**} &lt; k^*\\).\n\\[\n(n_2 + g + \\delta)k^{**} = sf(k^{**}), \\quad n_2 &gt; n_1 \\implies k^{**} &lt; k^*\n\\tag{20}\\]\nHigher population growth lowers steady-state capital and output per effective worker. The model predicts a negative cross-country correlation between \\(n\\) and per-capita income, consistent with the data."
+  },
+  {
+    "objectID": "blog/solow/index.html#maximizing-steady-state-consumption",
+    "href": "blog/solow/index.html#maximizing-steady-state-consumption",
+    "title": "The Solow Growth Model",
+    "section": "7.1 Maximizing Steady-State Consumption",
+    "text": "7.1 Maximizing Steady-State Consumption\nThe steady state \\(k^*\\) is pinned down by \\(s\\), but which steady state maximizes consumption per effective worker? Steady-state consumption is:\n\\[\nc^* = y^* - i^* = f(k^*) - sf(k^*)\n\\tag{21}\\]\nUsing Equation 14, \\(sf(k^*) = (n+g+\\delta)k^*\\), so:\n\\[\nc^* = f(k^*) - (n+g+\\delta)\\,k^*\n\\tag{22}\\]\n\n\nEquation 22 has a clean geometric interpretation: \\(c^*\\) is the vertical gap between the production function \\(f(k^*)\\) and the break-even line \\((n+g+\\delta)k^*\\). Maximizing \\(c^*\\) is equivalent to maximizing this gap.\nTo maximize \\(c^*\\) over \\(k^*\\), differentiate with respect to \\(k^*\\) and set to zero:\n\\[\n\\frac{dc^*}{dk^*} = f'(k^*) - (n+g+\\delta) = 0\n\\]\n\\[\n\\boxed{f'(k_{\\text{gold}}) = n + g + \\delta}\n\\tag{23}\\]\nThis is the Golden Rule of capital accumulation. The optimal long-run capital stock equates the marginal product of capital to the effective depreciation rate.\nEconomic intuition. Investing one more unit of capital raises output by \\(f'(k)\\) but costs \\((n+g+\\delta)\\) per period to maintain (depreciation plus dilution from growth). At the Golden Rule, these exactly balance. Below \\(k_\\text{gold}\\), the return exceeds the cost — invest more. Above \\(k_\\text{gold}\\), the cost exceeds the return — invest less."
+  },
+  {
+    "objectID": "blog/solow/index.html#the-golden-rule-saving-rate",
+    "href": "blog/solow/index.html#the-golden-rule-saving-rate",
+    "title": "The Solow Growth Model",
+    "section": "7.2 The Golden Rule Saving Rate",
+    "text": "7.2 The Golden Rule Saving Rate\nThe Golden Rule saving rate \\(s_\\text{gold}\\) is the value of \\(s\\) that makes the model’s steady state equal to \\(k_\\text{gold}\\). Using Equation 14 at \\(k_\\text{gold}\\):\n\\[\ns_\\text{gold} = \\frac{(n+g+\\delta)\\,k_\\text{gold}}{f(k_\\text{gold})}\n\\tag{24}\\]\nFor Cobb-Douglas (Equation 11), \\(f'(k)=\\alpha k^{\\alpha-1}\\), so Equation 23 gives \\(\\alpha k_\\text{gold}^{\\alpha-1} = n+g+\\delta\\). Using this in Equation 24:\n\\[\ns_\\text{gold} = \\frac{f'(k_\\text{gold})\\,k_\\text{gold}}{f(k_\\text{gold})} = \\frac{\\alpha\\,k_\\text{gold}^\\alpha}{k_\\text{gold}^\\alpha} = \\alpha\n\\]\nA remarkable result: for Cobb-Douglas, the Golden Rule saving rate equals the capital share \\(\\alpha\\). If \\(\\alpha \\approx 1/3\\), then \\(s_\\text{gold} \\approx 33\\%\\)."
+  },
+  {
+    "objectID": "blog/solow/index.html#dynamic-inefficiency",
+    "href": "blog/solow/index.html#dynamic-inefficiency",
+    "title": "The Solow Growth Model",
+    "section": "7.3 Dynamic Inefficiency",
+    "text": "7.3 Dynamic Inefficiency\nCompare the economy’s actual steady state \\(k^*\\) to the Golden Rule \\(k_\\text{gold}\\):\n\n\\(k^* &lt; k_\\text{gold}\\) (under-accumulation): Raising \\(s\\) increases \\(k^*\\) toward \\(k_\\text{gold}\\) and eventually raises consumption. But there is a short-run cost — higher saving means less consumption today. This is a genuine intertemporal trade-off.\n\\(k^* &gt; k_\\text{gold}\\) (over-accumulation, dynamic inefficiency): Reducing \\(s\\) raises consumption immediately and permanently — a true free lunch. No one needs to sacrifice. Empirical evidence suggests most countries have \\(k^* &lt; k_\\text{gold}\\), so dynamic inefficiency is not a practical concern for the Solow model."
   },
   {
     "objectID": "about_template.html",
