@@ -16,6 +16,8 @@ website:
     style: "docked"
     collapse-level: 1
     contents:
+      - text: "Writing"
+        href: writing/index.qmd
 
      # - text: "Projects"
      #   href: projects/index.qmd
@@ -24,12 +26,12 @@ website:
       #  href: talks/index.qmd
 
       #- text: "Blog"
-      #  href: blog.qmd
+      # href: blog.qmd
 
-      - section: "About"
-        contents:
-          - text: "Me"
-            href: about.qmd
+      #- section: "About"
+      #  contents:
+      #    - text: "Me"
+      #      href: about.qmd
           #- text: "This template"
           #  href: about_template.qmd
 
