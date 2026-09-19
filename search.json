@@ -1,181 +1,30 @@
 [
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "writing/index.html",
+    "href": "writing/index.html",
+    "title": "Volunteer",
     "section": "",
-    "text": "The Foundational Crisis of Calculus\n\n\n\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nZifan Huang\n\n\n\n\n\n\n\n\n\n\n\n\nThe Solow Growth Model\n\n\n\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nZifan Huang\n\n\n\n\n\n\nNo matching items",
+    "text": "I volunteered with Young Sustainable Impact (YSI) China, a youth-led nonprofit advancing the UN Sustainable Development Goals, as Media Team Lead, Greater China. I organized workshops and training sessions for youth entrepreneurship programs impacting 500+ participants, and created and managed digital content — educational videos and social media campaigns — achieving a 28% increase in online engagement.\nI also contributed as a columnist to YSI’s Sustainable Development Column (YSI可持续发展专栏), exploring how the SDGs intersect with markets, technology, and culture. These columns are written in Chinese.\n\nConsul General Lise Nordgaard took part in inaugurating YSI China’s Earthpreneur Day — Norwegian Business Association China\n“要有光”·奥特曼与可持续发展 (Ultraman and Sustainable Development)\n谈谈碳交易与可持续发展 (Carbon Trading and Sustainable Development)\n聊聊LGBTQIA+与现代商业 (LGBTQIA+ and Modern Business)\n比特币与可持续发展：无政府主义的乌托邦 or 现实主义的避风港？(Bitcoin and Sustainable Development)",
     "crumbs": [
-      "Blog"
+      "Volunteer"
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Zifan Huang",
+    "objectID": "writing/index.html#young-sustainable-impact-ysi-china",
+    "href": "writing/index.html#young-sustainable-impact-ysi-china",
+    "title": "Volunteer",
     "section": "",
-    "text": "LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nI am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is zifan.huang@chicagobooth.edu."
+    "text": "I volunteered with Young Sustainable Impact (YSI) China, a youth-led nonprofit advancing the UN Sustainable Development Goals, as Media Team Lead, Greater China. I organized workshops and training sessions for youth entrepreneurship programs impacting 500+ participants, and created and managed digital content — educational videos and social media campaigns — achieving a 28% increase in online engagement.\nI also contributed as a columnist to YSI’s Sustainable Development Column (YSI可持续发展专栏), exploring how the SDGs intersect with markets, technology, and culture. These columns are written in Chinese.\n\nConsul General Lise Nordgaard took part in inaugurating YSI China’s Earthpreneur Day — Norwegian Business Association China\n“要有光”·奥特曼与可持续发展 (Ultraman and Sustainable Development)\n谈谈碳交易与可持续发展 (Carbon Trading and Sustainable Development)\n聊聊LGBTQIA+与现代商业 (LGBTQIA+ and Modern Business)\n比特币与可持续发展：无政府主义的乌托邦 or 现实主义的避风港？(Bitcoin and Sustainable Development)",
+    "crumbs": [
+      "Volunteer"
+    ]
   },
   {
-    "objectID": "blog/calculus-crisis/index.html",
-    "href": "blog/calculus-crisis/index.html",
-    "title": "The Foundational Crisis of Calculus",
+    "objectID": "about_template.html",
+    "href": "about_template.html",
+    "title": "About this template",
     "section": "",
-    "text": "How did mathematics produce correct answers from logically incoherent foundations"
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#newtons-fluxions",
-    "href": "blog/calculus-crisis/index.html#newtons-fluxions",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "2.1 Newton’s Fluxions",
-    "text": "2.1 Newton’s Fluxions\nNewton framed calculus in terms of motion. A variable quantity — a “fluent” — flows continuously through time. Its fluxion is its instantaneous rate of flow, the velocity of the quantity. To find the fluxion of \\(x^2\\), Newton would let \\(x\\) increase by a small amount \\(o\\) over a small interval of time, compute the change in \\(x^2\\), and then divide by \\(o\\):\n\\[\n\\frac{(x + o)^2 - x^2}{o} = \\frac{2xo + o^2}{o} = 2x + o\n\\]\nThen Newton would set \\(o = 0\\) to obtain the fluxion \\(2x\\).\nThe result is correct. But the reasoning is not: \\(o\\) was assumed nonzero to justify the division, then assumed zero to discard the \\(o^2/o = o\\) term. Both assumptions cannot hold simultaneously."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#leibnizs-differentials",
-    "href": "blog/calculus-crisis/index.html#leibnizs-differentials",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "2.2 Leibniz’s Differentials",
-    "text": "2.2 Leibniz’s Differentials\nLeibniz developed an equivalent but notationally different approach. He worked with differentials \\(dx\\) and \\(dy\\) — infinitely small increments in \\(x\\) and \\(y\\). The derivative is the ratio \\(dy/dx\\). For \\(y = x^2\\):\n\\[\ndy = (x + dx)^2 - x^2 = 2x\\,dx + (dx)^2\n\\]\nDividing by \\(dx\\):\n\\[\n\\frac{dy}{dx} = 2x + dx\n\\]\nThen \\((dx)^2\\) and the remaining \\(dx\\) were dropped as “infinitely small compared to the finite \\(2x\\),” leaving \\(dy/dx = 2x\\).\nAgain: correct answer, incoherent argument. If \\(dx \\neq 0\\), the answer is \\(2x + dx\\), not \\(2x\\). If \\(dx = 0\\), the original division by \\(dx\\) is illegal."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#the-pattern",
-    "href": "blog/calculus-crisis/index.html#the-pattern",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "2.3 The Pattern",
-    "text": "2.3 The Pattern\nBoth methods share the same logical structure:\n\nIntroduce a small quantity (\\(o\\) or \\(dx\\)) and assume it is nonzero — so division by it is valid.\nExpand and simplify.\nDiscard all remaining powers of the small quantity as negligible.\nObtain the correct answer.\n\nStep 3 is the scandal. The practitioner must decide, by feel, which terms to keep and which to throw away. There is no principled rule — just the implicit understanding that “higher-order infinitesimals are smaller than first-order ones.” What does smaller mean for a quantity that is already infinitely small? Nobody said."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#the-man-and-the-motive",
-    "href": "blog/calculus-crisis/index.html#the-man-and-the-motive",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "3.1 The Man and the Motive",
-    "text": "3.1 The Man and the Motive\nGeorge Berkeley (1685–1753), Bishop of Cloyne, was one of the great empiricist philosophers. He had a long-standing grievance with the scientific establishment: mathematicians and natural philosophers had been using their air of precision to attack religious faith, arguing that rigorous rational inquiry had no room for miracles or revelation. Berkeley decided to return the favor.\nIn 1734 he published The Analyst: A Discourse Addressed to an Infidel Mathematician. His target was almost certainly Edmond Halley (of Halley’s comet fame). His argument was devastating."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#the-central-critique",
-    "href": "blog/calculus-crisis/index.html#the-central-critique",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "3.2 The Central Critique",
-    "text": "3.2 The Central Critique\nBerkeley accepted that the results of calculus were often correct. His attack was on the reasoning. He argued that the logical status of fluxions and infinitesimals was no better — and arguably worse — than the “mysteries” of religion that mathematicians mocked.\nHis most famous line:\n\n“And what are these Fluxions? The Velocities of evanescent Increments. And what are these same evanescent Increments? They are neither finite Quantities nor Quantities infinitely small, nor yet nothing. May we not call them the Ghosts of departed Quantities?”\n\nThe phrase ghosts of departed quantities is one of the most incisive epigrams in the history of science. It captures the problem exactly: the increments are invoked as real quantities when needed for the algebra, then made to vanish when they become inconvenient. They are neither alive (nonzero) nor dead (zero) — they haunt the calculation.\nBerkeley further argued that the correct results were obtained not because of the reasoning, but despite it — specifically, because two errors happened to cancel each other out:\n\n“By virtue of a twofold mistake you arrive, though not at science, yet at the truth.”\n\n\n\nBerkeley’s deeper philosophical point was that mathematicians demanded clarity in others’ domains (theology) that they conspicuously lacked in their own. The rhetorical force of The Analyst came precisely from this hypocrisy."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#a-concrete-example-of-the-double-error",
-    "href": "blog/calculus-crisis/index.html#a-concrete-example-of-the-double-error",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "3.3 A Concrete Example of the Double Error",
-    "text": "3.3 A Concrete Example of the Double Error\nTake the derivative of \\(y = x^2\\) using the increment method. Berkeley’s “twofold error” argument:\n\nError 1: Treat \\(o\\) as nonzero when dividing: \\(\\frac{(x+o)^2 - x^2}{o} = 2x + o\\)\nError 2: Drop the \\(o\\) term at the end, as if \\(o = 0\\)\n\nEach step is individually wrong, but the two errors cancel: the first “error” introduces a surplus \\(o\\), and the second “error” removes exactly that surplus, leaving the correct \\(2x\\). Berkeley’s point was that this looks like correct reasoning only because of a lucky coincidence in the algebra — and that no general principle justified why it always worked."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#the-pragmatic-argument",
-    "href": "blog/calculus-crisis/index.html#the-pragmatic-argument",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "4.1 The Pragmatic Argument",
-    "text": "4.1 The Pragmatic Argument\nFaced with Berkeley’s critique, most mathematicians responded with something like: the method works; figure out the foundations later. This was not entirely unreasonable. Calculus was producing correct and verifiable predictions about the physical world at a rate that had never been seen before. Abandoning it because of a philosophical objection would have been scientifically catastrophic.\nThere is a recurring pattern in mathematics where powerful techniques are used for decades or centuries before they are properly understood. (Complex numbers followed a similar arc: routinely used by the 16th century, not rigorously understood until the 19th.)"
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#attempts-at-rigorous-defense",
-    "href": "blog/calculus-crisis/index.html#attempts-at-rigorous-defense",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "4.2 Attempts at Rigorous Defense",
-    "text": "4.2 Attempts at Rigorous Defense\nSeveral mathematicians attempted to answer Berkeley on his own terms:\n\nColin Maclaurin (Treatise of Fluxions, 1742) tried to recast Newton’s calculus in the language of classical Greek geometry, avoiding infinitesimals entirely. The result was technically defensible but impossibly cumbersome and did not spread.\nJean le Rond d’Alembert argued that the derivative should be understood as a limit — the value approached by the difference quotient as the increment tends to zero. This was the germ of the right idea, but d’Alembert had no rigorous definition of “limit” and no way to make the argument precise.\nLeonhard Euler simply treated infinitesimals as exactly zero when convenient. His results were almost always correct (Euler had preternatural instincts), but his justification satisfied no one who was paying attention.\n\nNone of these responses answered Berkeley rigorously. The foundations remained contested."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#cauchys-reconstruction",
-    "href": "blog/calculus-crisis/index.html#cauchys-reconstruction",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "5.1 Cauchy’s Reconstruction",
-    "text": "5.1 Cauchy’s Reconstruction\nThe decisive step was taken by Augustin-Louis Cauchy in his Cours d’analyse (1821). Cauchy systematically rebuilt calculus on the concept of a limit, defined informally as follows:\n\nA variable quantity \\(u_n\\) has limit \\(\\ell\\) if, for any desired precision, the values of \\(u_n\\) eventually stay within that precision of \\(\\ell\\).\n\nHe defined the derivative of \\(f\\) at \\(x\\) as:\n\\[\nf'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}\n\\]\nThe key move: \\(h\\) never equals zero in this definition. The limit describes the behavior of the difference quotient as \\(h\\) approaches zero, not at \\(h = 0\\). No quantity is ever simultaneously nonzero and zero. The ghost is exorcised.\nCauchy also gave the first rigorous definitions of continuity and of the definite integral (as the limit of Riemann sums), constructing the whole edifice from the limit concept upward."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#weierstrasss-formalization",
-    "href": "blog/calculus-crisis/index.html#weierstrasss-formalization",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "5.2 Weierstrass’s Formalization",
-    "text": "5.2 Weierstrass’s Formalization\nCauchy’s limits still relied on intuitive language (“approaches,” “eventually”). Karl Weierstrass (1815–1897) replaced this with purely logical, quantifier-based definitions — eliminating all appeal to motion or intuition.\nThe \\(\\varepsilon\\)-\\(\\delta\\) definition of a limit:\n\\[\n\\lim_{x \\to a} f(x) = L\n\\quad \\iff \\quad\n\\forall\\, \\varepsilon &gt; 0,\\; \\exists\\, \\delta &gt; 0 \\text{ such that } 0 &lt; |x - a| &lt; \\delta \\implies |f(x) - L| &lt; \\varepsilon\n\\]\n\n\nThe \\(\\varepsilon\\)-\\(\\delta\\) definition replaced vague words like “approaches” with hard inequalities. It turned the limit from a dynamic process into a static logical statement — one that can be verified or refuted without any reference to time, motion, or “infinitely small” quantities.\nThis definition contains no infinitesimals, no motion, no intuition. Every term is a real number; every statement is a logical condition. With this, the derivative is:\n\\[\nf'(a) = L \\iff \\forall\\,\\varepsilon &gt; 0,\\; \\exists\\,\\delta &gt; 0 \\text{ such that } 0 &lt; |h| &lt; \\delta \\implies \\left|\\frac{f(a+h)-f(a)}{h} - L\\right| &lt; \\varepsilon\n\\]\nFor \\(f(x) = x^2\\), \\(a = x\\):\n\\[\n\\left|\\frac{(x+h)^2 - x^2}{h} - 2x\\right| = \\left|2x + h - 2x\\right| = |h|\n\\]\nSo for any \\(\\varepsilon &gt; 0\\), choose \\(\\delta = \\varepsilon\\). Then \\(0 &lt; |h| &lt; \\delta\\) implies \\(|h| &lt; \\varepsilon\\). The limit is \\(2x\\), rigorously. No ghosts anywhere."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#what-changed",
-    "href": "blog/calculus-crisis/index.html#what-changed",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "5.3 What Changed",
-    "text": "5.3 What Changed\n\n\n\n\n\n\n\n\nEra\nFoundation\nStatus of \\(dx\\)\n\n\n\n\nNewton / Leibniz\nFluxions / differentials\nNonzero then zero — inconsistent\n\n\nCauchy (1821)\nLimits (intuitive)\nEliminated; limit is about approach, not arrival\n\n\nWeierstrass (1860s)\n\\(\\varepsilon\\)-\\(\\delta\\)\nEliminated; purely static logical condition\n\n\n\nThe 150-year crisis was resolved by changing the question. Instead of asking “what is an infinitely small quantity?”, Weierstrass asked “when does a function’s value get arbitrarily close to a target?” The second question has a precise answer that requires no new ontology."
-  },
-  {
-    "objectID": "blog/calculus-crisis/index.html#non-standard-analysis",
-    "href": "blog/calculus-crisis/index.html#non-standard-analysis",
-    "title": "The Foundational Crisis of Calculus",
-    "section": "6.1 Non-Standard Analysis",
-    "text": "6.1 Non-Standard Analysis\nThe story has a surprising coda. In 1960, logician Abraham Robinson proved that it is possible to extend the real numbers to a larger ordered field — the hyperreals — that genuinely contains infinitely small (and infinitely large) elements, and that this extension is logically consistent (assuming standard set theory is consistent).\nIn Robinson’s non-standard analysis, \\(dx\\) is a genuine nonzero infinitesimal, and \\(dy/dx = 2x\\) follows rigorously without epsilon-delta arguments. The intuitions of Newton and Leibniz were, in a deep sense, vindicated: infinitesimals can be made rigorous. Berkeley’s objection was not that infinitesimals were the wrong idea, but that they had not been defined properly.\n\n\nRobinson’s hyperreals satisfy the transfer principle: any first-order statement true of the reals is also true of the hyperreals. This is what makes non-standard analysis consistent — it is not a different mathematics, but an extension of the same one.\nThe \\(\\varepsilon\\)-\\(\\delta\\) approach and non-standard analysis give identical results. They are two different foundations for the same edifice. Today, \\(\\varepsilon\\)-\\(\\delta\\) dominates in university courses, largely for historical and pedagogical reasons — not because infinitesimals are wrong, but because Weierstrass got there first."
-  },
-  {
-    "objectID": "talks/talk_1/index.html",
-    "href": "talks/talk_1/index.html",
-    "title": "Building Website in R: Step by Step Introduction to blogdown",
-    "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "projects/project_1/index.html",
-    "href": "projects/project_1/index.html",
-    "title": "project_1",
-    "section": "",
-    "text": "In this project I use EHR to explore the hospital transfers."
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "id: packages max-description-length: 80 image-height: 250px fields: [title, description] contents:\n\npkg_1\npkg_2 type: table grid-item-border: false sort-ui: false filter-ui: false\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplication: Systemic Discrimination Among Large U.S. Employers\n\n\nComplemented the original study by adding employer and month fixed effects to the regression model; Visualized results with ggplot2 and built a Shiny app for interactive exploration to non-technical audiences; Utilized U.S. Census population data to analyze the geographical distribution of experimental designs.\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/project_2/index.html",
-    "href": "projects/project_2/index.html",
-    "title": "project_2",
-    "section": "",
-    "text": "In this project I work on Machine Learning methods to predict in-hospital mortality."
-  },
-  {
-    "objectID": "projects/pkg_1/index.html",
-    "href": "projects/pkg_1/index.html",
-    "title": "pkg_1",
-    "section": "",
-    "text": "This package does this."
-  },
-  {
-    "objectID": "projects/pkg_2/index.html",
-    "href": "projects/pkg_2/index.html",
-    "title": "pkg_2",
-    "section": "",
-    "text": "This package does this."
-  },
-  {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Talks",
-    "section": "",
-    "text": "Talk at Oslo UseR meetup\n\n\n\n\n\nApr 2, 2019\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "talks/index.html#rstats",
-    "href": "talks/index.html#rstats",
-    "title": "Talks",
-    "section": "",
-    "text": "Talk at Oslo UseR meetup\n\n\n\n\n\nApr 2, 2019\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "talks/index.html#electronic-health-records",
-    "href": "talks/index.html#electronic-health-records",
-    "title": "Talks",
-    "section": "Electronic Health Records",
-    "text": "Electronic Health Records\n\n\n\n\n\n\n\n\n\n\nLearning from Hospital EHR data with R\n\n\n\n\n\nA 15 minutes introduction to hospital EHR data\n\n\n\n\n\nOct 28, 2019\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Zifan Huang",
-    "section": "",
-    "text": "LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nI am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is zifan.huang@chicagobooth.edu."
+    "text": "TipAbout this template\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nThis is to demonstrate how to make a drop-down page from the navigation bar."
   },
   {
     "objectID": "blog/solow/index.html",
@@ -304,10 +153,178 @@
     "text": "7.3 Dynamic Inefficiency\nCompare the economy’s actual steady state \\(k^*\\) to the Golden Rule \\(k_\\text{gold}\\):\n\n\\(k^* &lt; k_\\text{gold}\\) (under-accumulation): Raising \\(s\\) increases \\(k^*\\) toward \\(k_\\text{gold}\\) and eventually raises consumption. But there is a short-run cost — higher saving means less consumption today. This is a genuine intertemporal trade-off.\n\\(k^* &gt; k_\\text{gold}\\) (over-accumulation, dynamic inefficiency): Reducing \\(s\\) raises consumption immediately and permanently — a true free lunch. No one needs to sacrifice. Empirical evidence suggests most countries have \\(k^* &lt; k_\\text{gold}\\), so dynamic inefficiency is not a practical concern for the Solow model."
   },
   {
-    "objectID": "about_template.html",
-    "href": "about_template.html",
-    "title": "About this template",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Zifan Huang",
     "section": "",
-    "text": "About this template\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nThis is to demonstrate how to make a drop-down page from the navigation bar."
+    "text": "LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nI am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is zifan.huang@chicagobooth.edu."
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Talk at Oslo UseR meetup\n\n\n\n\n\nApr 2, 2019\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/index.html#rstats",
+    "href": "talks/index.html#rstats",
+    "title": "Talks",
+    "section": "",
+    "text": "Talk at Oslo UseR meetup\n\n\n\n\n\nApr 2, 2019\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/index.html#electronic-health-records",
+    "href": "talks/index.html#electronic-health-records",
+    "title": "Talks",
+    "section": "Electronic Health Records",
+    "text": "Electronic Health Records\n\n\n\n\n\n\n\n\n\n\nLearning from Hospital EHR data with R\n\n\nA 15 minutes introduction to hospital EHR data\n\n\n\n\n\nOct 28, 2019\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/pkg_2/index.html",
+    "href": "projects/pkg_2/index.html",
+    "title": "pkg_2",
+    "section": "",
+    "text": "This package does this."
+  },
+  {
+    "objectID": "projects/pkg_1/index.html",
+    "href": "projects/pkg_1/index.html",
+    "title": "pkg_1",
+    "section": "",
+    "text": "This package does this."
+  },
+  {
+    "objectID": "projects/project_2/index.html",
+    "href": "projects/project_2/index.html",
+    "title": "project_2",
+    "section": "",
+    "text": "In this project I work on Machine Learning methods to predict in-hospital mortality."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "id: packages max-description-length: 80 image-height: 250px fields: [title, description] contents:\n\npkg_1\npkg_2 type: table grid-item-border: false sort-ui: false filter-ui: false\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplication: Systemic Discrimination Among Large U.S. Employers\n\n\nComplemented the original study by adding employer and month fixed effects to the regression model; Visualized results with ggplot2 and built a Shiny app for interactive exploration to non-technical audiences; Utilized U.S. Census population data to analyze the geographical distribution of experimental designs.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/project_1/index.html",
+    "href": "projects/project_1/index.html",
+    "title": "project_1",
+    "section": "",
+    "text": "In this project I use EHR to explore the hospital transfers."
+  },
+  {
+    "objectID": "talks/talk_1/index.html",
+    "href": "talks/talk_1/index.html",
+    "title": "Building Website in R: Step by Step Introduction to blogdown",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html",
+    "href": "blog/calculus-crisis/index.html",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "",
+    "text": "How did mathematics produce correct answers from logically incoherent foundations"
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#newtons-fluxions",
+    "href": "blog/calculus-crisis/index.html#newtons-fluxions",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "2.1 Newton’s Fluxions",
+    "text": "2.1 Newton’s Fluxions\nNewton framed calculus in terms of motion. A variable quantity — a “fluent” — flows continuously through time. Its fluxion is its instantaneous rate of flow, the velocity of the quantity. To find the fluxion of \\(x^2\\), Newton would let \\(x\\) increase by a small amount \\(o\\) over a small interval of time, compute the change in \\(x^2\\), and then divide by \\(o\\):\n\\[\n\\frac{(x + o)^2 - x^2}{o} = \\frac{2xo + o^2}{o} = 2x + o\n\\]\nThen Newton would set \\(o = 0\\) to obtain the fluxion \\(2x\\).\nThe result is correct. But the reasoning is not: \\(o\\) was assumed nonzero to justify the division, then assumed zero to discard the \\(o^2/o = o\\) term. Both assumptions cannot hold simultaneously."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#leibnizs-differentials",
+    "href": "blog/calculus-crisis/index.html#leibnizs-differentials",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "2.2 Leibniz’s Differentials",
+    "text": "2.2 Leibniz’s Differentials\nLeibniz developed an equivalent but notationally different approach. He worked with differentials \\(dx\\) and \\(dy\\) — infinitely small increments in \\(x\\) and \\(y\\). The derivative is the ratio \\(dy/dx\\). For \\(y = x^2\\):\n\\[\ndy = (x + dx)^2 - x^2 = 2x\\,dx + (dx)^2\n\\]\nDividing by \\(dx\\):\n\\[\n\\frac{dy}{dx} = 2x + dx\n\\]\nThen \\((dx)^2\\) and the remaining \\(dx\\) were dropped as “infinitely small compared to the finite \\(2x\\),” leaving \\(dy/dx = 2x\\).\nAgain: correct answer, incoherent argument. If \\(dx \\neq 0\\), the answer is \\(2x + dx\\), not \\(2x\\). If \\(dx = 0\\), the original division by \\(dx\\) is illegal."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-pattern",
+    "href": "blog/calculus-crisis/index.html#the-pattern",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "2.3 The Pattern",
+    "text": "2.3 The Pattern\nBoth methods share the same logical structure:\n\nIntroduce a small quantity (\\(o\\) or \\(dx\\)) and assume it is nonzero — so division by it is valid.\nExpand and simplify.\nDiscard all remaining powers of the small quantity as negligible.\nObtain the correct answer.\n\nStep 3 is the scandal. The practitioner must decide, by feel, which terms to keep and which to throw away. There is no principled rule — just the implicit understanding that “higher-order infinitesimals are smaller than first-order ones.” What does smaller mean for a quantity that is already infinitely small? Nobody said."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-man-and-the-motive",
+    "href": "blog/calculus-crisis/index.html#the-man-and-the-motive",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "3.1 The Man and the Motive",
+    "text": "3.1 The Man and the Motive\nGeorge Berkeley (1685–1753), Bishop of Cloyne, was one of the great empiricist philosophers. He had a long-standing grievance with the scientific establishment: mathematicians and natural philosophers had been using their air of precision to attack religious faith, arguing that rigorous rational inquiry had no room for miracles or revelation. Berkeley decided to return the favor.\nIn 1734 he published The Analyst: A Discourse Addressed to an Infidel Mathematician. His target was almost certainly Edmond Halley (of Halley’s comet fame). His argument was devastating."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-central-critique",
+    "href": "blog/calculus-crisis/index.html#the-central-critique",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "3.2 The Central Critique",
+    "text": "3.2 The Central Critique\nBerkeley accepted that the results of calculus were often correct. His attack was on the reasoning. He argued that the logical status of fluxions and infinitesimals was no better — and arguably worse — than the “mysteries” of religion that mathematicians mocked.\nHis most famous line:\n\n“And what are these Fluxions? The Velocities of evanescent Increments. And what are these same evanescent Increments? They are neither finite Quantities nor Quantities infinitely small, nor yet nothing. May we not call them the Ghosts of departed Quantities?”\n\nThe phrase ghosts of departed quantities is one of the most incisive epigrams in the history of science. It captures the problem exactly: the increments are invoked as real quantities when needed for the algebra, then made to vanish when they become inconvenient. They are neither alive (nonzero) nor dead (zero) — they haunt the calculation.\nBerkeley further argued that the correct results were obtained not because of the reasoning, but despite it — specifically, because two errors happened to cancel each other out:\n\n“By virtue of a twofold mistake you arrive, though not at science, yet at the truth.”\n\n\n\nBerkeley’s deeper philosophical point was that mathematicians demanded clarity in others’ domains (theology) that they conspicuously lacked in their own. The rhetorical force of The Analyst came precisely from this hypocrisy."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#a-concrete-example-of-the-double-error",
+    "href": "blog/calculus-crisis/index.html#a-concrete-example-of-the-double-error",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "3.3 A Concrete Example of the Double Error",
+    "text": "3.3 A Concrete Example of the Double Error\nTake the derivative of \\(y = x^2\\) using the increment method. Berkeley’s “twofold error” argument:\n\nError 1: Treat \\(o\\) as nonzero when dividing: \\(\\frac{(x+o)^2 - x^2}{o} = 2x + o\\)\nError 2: Drop the \\(o\\) term at the end, as if \\(o = 0\\)\n\nEach step is individually wrong, but the two errors cancel: the first “error” introduces a surplus \\(o\\), and the second “error” removes exactly that surplus, leaving the correct \\(2x\\). Berkeley’s point was that this looks like correct reasoning only because of a lucky coincidence in the algebra — and that no general principle justified why it always worked."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#the-pragmatic-argument",
+    "href": "blog/calculus-crisis/index.html#the-pragmatic-argument",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "4.1 The Pragmatic Argument",
+    "text": "4.1 The Pragmatic Argument\nFaced with Berkeley’s critique, most mathematicians responded with something like: the method works; figure out the foundations later. This was not entirely unreasonable. Calculus was producing correct and verifiable predictions about the physical world at a rate that had never been seen before. Abandoning it because of a philosophical objection would have been scientifically catastrophic.\nThere is a recurring pattern in mathematics where powerful techniques are used for decades or centuries before they are properly understood. (Complex numbers followed a similar arc: routinely used by the 16th century, not rigorously understood until the 19th.)"
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#attempts-at-rigorous-defense",
+    "href": "blog/calculus-crisis/index.html#attempts-at-rigorous-defense",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "4.2 Attempts at Rigorous Defense",
+    "text": "4.2 Attempts at Rigorous Defense\nSeveral mathematicians attempted to answer Berkeley on his own terms:\n\nColin Maclaurin (Treatise of Fluxions, 1742) tried to recast Newton’s calculus in the language of classical Greek geometry, avoiding infinitesimals entirely. The result was technically defensible but impossibly cumbersome and did not spread.\nJean le Rond d’Alembert argued that the derivative should be understood as a limit — the value approached by the difference quotient as the increment tends to zero. This was the germ of the right idea, but d’Alembert had no rigorous definition of “limit” and no way to make the argument precise.\nLeonhard Euler simply treated infinitesimals as exactly zero when convenient. His results were almost always correct (Euler had preternatural instincts), but his justification satisfied no one who was paying attention.\n\nNone of these responses answered Berkeley rigorously. The foundations remained contested."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#cauchys-reconstruction",
+    "href": "blog/calculus-crisis/index.html#cauchys-reconstruction",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "5.1 Cauchy’s Reconstruction",
+    "text": "5.1 Cauchy’s Reconstruction\nThe decisive step was taken by Augustin-Louis Cauchy in his Cours d’analyse (1821). Cauchy systematically rebuilt calculus on the concept of a limit, defined informally as follows:\n\nA variable quantity \\(u_n\\) has limit \\(\\ell\\) if, for any desired precision, the values of \\(u_n\\) eventually stay within that precision of \\(\\ell\\).\n\nHe defined the derivative of \\(f\\) at \\(x\\) as:\n\\[\nf'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}\n\\]\nThe key move: \\(h\\) never equals zero in this definition. The limit describes the behavior of the difference quotient as \\(h\\) approaches zero, not at \\(h = 0\\). No quantity is ever simultaneously nonzero and zero. The ghost is exorcised.\nCauchy also gave the first rigorous definitions of continuity and of the definite integral (as the limit of Riemann sums), constructing the whole edifice from the limit concept upward."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#weierstrasss-formalization",
+    "href": "blog/calculus-crisis/index.html#weierstrasss-formalization",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "5.2 Weierstrass’s Formalization",
+    "text": "5.2 Weierstrass’s Formalization\nCauchy’s limits still relied on intuitive language (“approaches,” “eventually”). Karl Weierstrass (1815–1897) replaced this with purely logical, quantifier-based definitions — eliminating all appeal to motion or intuition.\nThe \\(\\varepsilon\\)-\\(\\delta\\) definition of a limit:\n\\[\n\\lim_{x \\to a} f(x) = L\n\\quad \\iff \\quad\n\\forall\\, \\varepsilon &gt; 0,\\; \\exists\\, \\delta &gt; 0 \\text{ such that } 0 &lt; |x - a| &lt; \\delta \\implies |f(x) - L| &lt; \\varepsilon\n\\]\n\n\nThe \\(\\varepsilon\\)-\\(\\delta\\) definition replaced vague words like “approaches” with hard inequalities. It turned the limit from a dynamic process into a static logical statement — one that can be verified or refuted without any reference to time, motion, or “infinitely small” quantities.\nThis definition contains no infinitesimals, no motion, no intuition. Every term is a real number; every statement is a logical condition. With this, the derivative is:\n\\[\nf'(a) = L \\iff \\forall\\,\\varepsilon &gt; 0,\\; \\exists\\,\\delta &gt; 0 \\text{ such that } 0 &lt; |h| &lt; \\delta \\implies \\left|\\frac{f(a+h)-f(a)}{h} - L\\right| &lt; \\varepsilon\n\\]\nFor \\(f(x) = x^2\\), \\(a = x\\):\n\\[\n\\left|\\frac{(x+h)^2 - x^2}{h} - 2x\\right| = \\left|2x + h - 2x\\right| = |h|\n\\]\nSo for any \\(\\varepsilon &gt; 0\\), choose \\(\\delta = \\varepsilon\\). Then \\(0 &lt; |h| &lt; \\delta\\) implies \\(|h| &lt; \\varepsilon\\). The limit is \\(2x\\), rigorously. No ghosts anywhere."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#what-changed",
+    "href": "blog/calculus-crisis/index.html#what-changed",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "5.3 What Changed",
+    "text": "5.3 What Changed\n\n\n\n\n\n\n\n\nEra\nFoundation\nStatus of \\(dx\\)\n\n\n\n\nNewton / Leibniz\nFluxions / differentials\nNonzero then zero — inconsistent\n\n\nCauchy (1821)\nLimits (intuitive)\nEliminated; limit is about approach, not arrival\n\n\nWeierstrass (1860s)\n\\(\\varepsilon\\)-\\(\\delta\\)\nEliminated; purely static logical condition\n\n\n\nThe 150-year crisis was resolved by changing the question. Instead of asking “what is an infinitely small quantity?”, Weierstrass asked “when does a function’s value get arbitrarily close to a target?” The second question has a precise answer that requires no new ontology."
+  },
+  {
+    "objectID": "blog/calculus-crisis/index.html#non-standard-analysis",
+    "href": "blog/calculus-crisis/index.html#non-standard-analysis",
+    "title": "The Foundational Crisis of Calculus",
+    "section": "6.1 Non-Standard Analysis",
+    "text": "6.1 Non-Standard Analysis\nThe story has a surprising coda. In 1960, logician Abraham Robinson proved that it is possible to extend the real numbers to a larger ordered field — the hyperreals — that genuinely contains infinitely small (and infinitely large) elements, and that this extension is logically consistent (assuming standard set theory is consistent).\nIn Robinson’s non-standard analysis, \\(dx\\) is a genuine nonzero infinitesimal, and \\(dy/dx = 2x\\) follows rigorously without epsilon-delta arguments. The intuitions of Newton and Leibniz were, in a deep sense, vindicated: infinitesimals can be made rigorous. Berkeley’s objection was not that infinitesimals were the wrong idea, but that they had not been defined properly.\n\n\nRobinson’s hyperreals satisfy the transfer principle: any first-order statement true of the reals is also true of the hyperreals. This is what makes non-standard analysis consistent — it is not a different mathematics, but an extension of the same one.\nThe \\(\\varepsilon\\)-\\(\\delta\\) approach and non-standard analysis give identical results. They are two different foundations for the same edifice. Today, \\(\\varepsilon\\)-\\(\\delta\\) dominates in university courses, largely for historical and pedagogical reasons — not because infinitesimals are wrong, but because Weierstrass got there first."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Zifan Huang",
+    "section": "",
+    "text": "LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Email\n  \n  \n    \n     CV\n  \n\n  \n  \nI am a Research Professional at the Booth School of Business at the University of Chicago, working with Christina Patterson and Joe Vavra. I received my BA in Economics from Boston University in May 2025, with minors in Mathematics and Innovation & Entrepreneurship. My email is zifan.huang@chicagobooth.edu."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "The Foundational Crisis of Calculus\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nZifan Huang\n\n\n\n\n\n\n\n\n\n\n\n\nThe Solow Growth Model\n\n\n\n\n\n\n\n\nMar 18, 2026\n\n\nZifan Huang\n\n\n\n\n\nNo matching items"
   }
 ]
